@@ -1,3 +1,5 @@
+body {background-color: #4267B2;}
+
 img {
   height: 100%;
   width: 100%;
@@ -5,9 +7,8 @@ img {
 
 i {
   text-decoration: none;
-  color: #4267B2; /* Facebook blue */
+  color: #4267B2;
   font-size: 200px;;
-  margin-right: 10px;
 }
 
 .app-icons:hover {
@@ -64,11 +65,31 @@ i {
   height: auto;
 }
 
+.social-icon-container a {
+  width: 250px;
+  height: 250px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25%;
+  text-decoration: none;
+}
+
+/* .social-icon-container a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
 .link-button-container {
   display: flex;
   justify-content: center;
-  gap: 200px;
+  gap: 125px;
   height: 300px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
