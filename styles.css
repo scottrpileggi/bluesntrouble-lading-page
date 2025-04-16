@@ -1,0 +1,23 @@
+img {
+  height: 100%;
+  width: 100%;
+}
+
+#header-container {
+  text-align: center;
+}
+
+#logo-flexbox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#logo-img-container {
+  width: 250px;
+  height: 250px;
+}
+
+#logo-img-container img {
+  border-radius: 50%;
+}
