@@ -3,6 +3,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0px;;
   background-color: #4267B2;
   color: white;
@@ -25,11 +27,6 @@ h1 {
   text-align: center;
 }
 
-footer {
-  margin-top: auto;
-  text-align: center;
-}
-
 .app-icons:hover {
   color: #365899;
 }
@@ -43,7 +40,7 @@ footer {
 
 #header-one-bluesntrouble {
   margin-bottom: auto;
-  background-color: blue;
+  background-color: cornflowerblue;
   height: 100px;
   display: flex;
   align-items: center;
@@ -76,10 +73,10 @@ footer {
 }
 
 
-#content-container {width: 100%;}
 
 .link-container {
   width: 50%;
+  height: 100%;
 }
 
 #quote-container span {font-size: 60px;}
@@ -88,7 +85,7 @@ footer {
   display: flex;
   justify-content: center;
   margin-top: 75px;
-  height: 1000px;
+  width: 100%;
 }
 
 .content-title {
