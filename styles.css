@@ -133,7 +133,6 @@ h1 {
   height: 50px;
   background-color: #4267B2; /* Button background color */
   color: white; /* Button text color */
-  padding-left: 3px;
   border: none;
   border-radius: 50%; /* Make it circular */
   font-size: 20px;
