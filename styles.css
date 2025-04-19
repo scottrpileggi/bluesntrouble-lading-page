@@ -115,6 +115,10 @@ h1 {
   text-decoration: none;
 }
 
+.social-icon-container a:active {
+  transform: scale(0.9); /* Slightly shrink the icon */
+  background-color: #365899; /* Change background color on click */
+}
 
 .link-button-container {
   display: flex;
@@ -125,7 +129,7 @@ h1 {
 }
 
 #back-to-top {
-  display: none;
+  /* display: none; */
   position: fixed;
   bottom: 20px; /* Distance from the bottom of the screen */
   right: 20px; /* Distance from the right of the screen */
