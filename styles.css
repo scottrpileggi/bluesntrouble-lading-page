@@ -31,11 +31,38 @@ h1 {
   color: #365899;
 }
 
+#header-section {
+  position: relative; /* Ensure the container is positioned for the pseudo-element */
+  height: 750px;
+  overflow: hidden; /* Prevent the pseudo-element from overflowing */
+}
+
+#header-section::before {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/sources/images/truck-band.jpg);
+  background-size: 100%; /* Scale the first image to 50% and the second to 50% of the container */
+  background-position: top right, top left; /* Position the first image at the top-right, second at the top-left */
+  background-repeat: no-repeat; /* Prevent both images from repeating */
+  filter: grayscale(100%); /* Apply grayscale only to the background images */
+  z-index: -1; /* Place the pseudo-element behind the content */
+  background-position: 50% 35%; /* 50% horizontally (center), 25% vertically */
+}
+
 #header-container {
   text-align: center;
   margin-bottom: 55px;
   display: flex;
   flex-direction: column;
+}
+
+.banner-photo {
+  width: 100%;
+  height: 400px;
 }
 
 #header-one-bluesntrouble {
@@ -55,8 +82,10 @@ h1 {
 
 #logo-flexbox {
   width: 100%;
+  height: 400px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 #logo-img-container {
