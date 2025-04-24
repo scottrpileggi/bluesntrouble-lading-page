@@ -33,7 +33,6 @@ h1 {
 
 #header-section {
   position: relative; /* Ensure the container is positioned for the pseudo-element */
-  height: 750px;
   overflow: hidden; /* Prevent the pseudo-element from overflowing */
 }
 
@@ -50,7 +49,7 @@ h1 {
   background-repeat: no-repeat; /* Prevent both images from repeating */
   filter: grayscale(100%); /* Apply grayscale only to the background images */
   z-index: -1; /* Place the pseudo-element behind the content */
-  background-position: 50% 35%; /* 50% horizontally (center), 25% vertically */
+  background-position: 50% 10%; /* 50% horizontally (center), 25% vertically */
 }
 
 #header-container {
@@ -65,17 +64,22 @@ h1 {
   height: 400px;
 }
 
-#header-one-bluesntrouble {
+#fixed-container {
   margin-bottom: auto;
   background-color: cornflowerblue;
   opacity: .95;
   height: 100px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: fixed;
   width: 100%;
   margin-top: 0;
+}
+
+#header-one-bluesntrouble {
+
 }
 
 #joshua-text {margin-top: 125px;}
@@ -194,9 +198,17 @@ h1 {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 414px) {
   #header-one-bluesntrouble, #quote-container span {
     font-size: 35px;
+  }
+
+  #header-container {
+    margin-bottom: -50px;
+  }
+
+  #joshua-text {
+    margin-top: -20px;
   }
 }
 
