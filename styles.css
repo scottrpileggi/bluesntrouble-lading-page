@@ -44,34 +44,50 @@ h1 {
   position: fixed;
   width: 100%;
   margin-top: 0;
+  z-index: 5;
 }
 
 #slogan {
   margin-bottom: 10px;
+  font-size: 15px;
+  text-align: center;
 }
 
-
-
 #logo-flexbox {
-  margin-top: 200px;
+  position: relative;
+  margin-top: 7rem;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
+
+#truck-band-image {
+  border: 10px solid cornflowerblue;
+  border-radius: 1%;
+}
+
+#truck-band-image img {
+  filter: grayscale(1);
+}
+
 #logo-img-container {
   width: 250px;
   height: 250px;
+  position: absolute;
+  top: 40px;
 }
 
 #logo-img-container img {
   border-radius: 50%;
+  box-shadow: 3px 7px 17px cornflowerblue;
 }
 
 #quote-container {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  position: absolute;
+  top: 30px;
 }
 
 
@@ -160,15 +176,27 @@ h1 {
     flex-direction: column;
     align-items: center;
   }
-
-  #back-to-top {
-    display: block;
-  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 414px) {
+  #joshua-text {
+    font-size: 20px;
+  }
+
   #header-one-bluesntrouble, #quote-container span {
-    font-size: 35px;
+    font-size: 25px;
+  }
+
+  #logo-img-container {
+    width: 100px;
+    height: 100px;
+    top: 25px;
+  }
+
+  #slogan {margin: 3px;}
+
+  #logo-flexbox {
+    margin-top: 6rem;;
   }
 }
 
