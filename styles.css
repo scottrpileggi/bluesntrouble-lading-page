@@ -1,4 +1,9 @@
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-decoration: none;
   margin: 0px;
 }
@@ -6,7 +11,8 @@ h1, h2, h3, h4, h5, h6 {
 body {
   display: flex;
   flex-direction: column;
-  margin: 0px;;
+  margin: 0px;
+  ;
   background-color: #4267B2;
   color: white;
   font: normal 16px Arial, sans-serif;
@@ -100,7 +106,9 @@ h1 {
   height: 100%;
 }
 
-#quote-container span {font-size: 60px;}
+#quote-container span {
+  font-size: 60px;
+}
 
 #content-container {
   display: flex;
@@ -144,22 +152,30 @@ h1 {
 #back-to-top {
   /* display: none; */
   position: fixed;
-  bottom: 20px; /* Distance from the bottom of the screen */
-  right: 20px; /* Distance from the right of the screen */
+  bottom: 20px;
+  /* Distance from the bottom of the screen */
+  right: 20px;
+  /* Distance from the right of the screen */
   width: 50px;
   height: 50px;
-  background-color: #4267B2; /* Button background color */
-  color: white; /* Button text color */
+  background-color: #4267B2;
+  /* Button background color */
+  color: white;
+  /* Button text color */
   border: none;
-  border-radius: 50%; /* Make it circular */
+  border-radius: 50%;
+  /* Make it circular */
   font-size: 20px;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
-  z-index: 1000; /* Ensure it appears above other elements */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  /* Add a shadow for better visibility */
+  z-index: 1000;
+  /* Ensure it appears above other elements */
 }
 
 #back-to-top:hover {
-  background-color: #365899; /* Change color on hover */
+  background-color: #365899;
+  /* Change color on hover */
 }
 
 @media (max-width: 1290px) {
@@ -190,7 +206,8 @@ h1 {
     font-size: 20px;
   }
 
-  #header-one-bluesntrouble, #quote-container span {
+  #header-one-bluesntrouble,
+  #quote-container span {
     font-size: 25px;
   }
 
@@ -200,12 +217,18 @@ h1 {
     top: 25px;
   }
 
-  #slogan {margin: 3px;}
+  #slogan {
+    margin: 3px;
+  }
 
   #logo-flexbox {
-    margin-top: 6rem;;
+    margin-top: 6rem;
+    ;
   }
 }
 
+/* hide venmo temporarily */
 
-
+#venmo-link {
+  display: none;
+}
